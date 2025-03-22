@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- <aside class="sidebar">
+            <h2>Chats</h2>
+            <ul>
+                <li class="contact">John Doe</li>
+                <li class="contact">Jane Smith</li>
+                <li class="contact">Alex Brown</li>
+            </ul>
+        </aside> -->
+        <main class="chat-area">
+            <div class="chat-header">Chat with Anyone</div>
+            <div class="chat-messages">
+                <div class="message received">Hello!</div>
+                <div class="message sent">Hi, how are you?</div>
+                <div class="message received">I'm good, thanks!</div>
+            </div>
+            <div class="chat-input">
+                <form action="#" id="send-container">
+                <input type="text" placeholder="Type a message..." id="msginp">
+                <button>Send</button>
+            </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
